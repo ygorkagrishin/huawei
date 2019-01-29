@@ -1,0 +1,88 @@
+.header {
+  padding: 42px 0 36px;
+  line-height: 1;
+  border: 1px solid rgba(0,0,0,.1);
+}
+
+.header .row {
+  justify-content: space-between;
+}
+
+.header .logo-area {
+  align-self: center;
+}
+
+.header .logo-area a {
+  display: block;
+}
+
+.header .logo-area img {
+  width: 100%;
+}
+
+.header .inf-area .address::before {
+  content: '';
+
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  margin-right: 3px;
+
+  background: url('img/general/placeholder.svg') no-repeat center / cover;
+}
+
+.header .inf-area .time::before {
+  content: '';
+
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  margin-right: 5px;
+
+  background: url('img/general/clock.svg') no-repeat center / cover;
+}
+
+.header .inf-area p::before {
+  vertical-align: -1px;
+}
+
+.header .inf-area p:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.header .tel-area {
+  text-align: right;
+}
+
+.header .tel-area p {
+  margin-bottom: 8px;
+}
+
+.header .tel-area span {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.header .btn-area .btn.btn-primary {
+  width: 100%;
+}
+
+@media screen and (max-width: 540px) {
+  .header .logo-area {
+    width: 50%;
+  }
+
+  .header .inf-area {
+    display: none;
+  }
+
+  .header .tel-area {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  .header .btn-area {
+    margin-top: 10%;
+  }
+}

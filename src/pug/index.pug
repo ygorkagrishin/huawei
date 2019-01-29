@@ -1,0 +1,698 @@
+extends templates/temp
+
+block title
+  title Тестовая страница
+
+block content
+  //- begin page top
+  .page-top 
+    //- begin filter
+    include components/_filter
+    //- end filter
+
+    //- begin header
+    header 
+      include components/_header
+    //- end header
+    
+    include components/_nav
+  //- end page top
+  
+  //- begin hero
+  section.hero
+    .container
+      .carousel.slide#carouselPreview(data-ride="carousel")
+        .carousel-inner
+          //- begin carousel-item-1
+          .carousel-item.active
+            .row.carousel-item-content
+              .col-lg-6.col-sm-12(style="background: url(img/content/hero/group-1.jpg) no-repeat center / cover")
+                .carousel-item-desc
+                  h3.title Ремонт Huawei
+                  a(href="#").btn.btn-light Подробнее
+                .pic-container
+                  img(src="img/content/hero/huawei.png", alt="Картинка huawei")
+              .col-lg-6.col-sm-12(style="background: url(img/content/hero/group-2.jpg) no-repeat center / cover") 
+                .carousel-item-desc
+                  h3.title Ремонт Honor
+                  a(href="#").btn.btn-light Подробнее
+                .pic-container  
+                  img(src="img/content/hero/honor.png", alt="Картинка honor")
+          //- end carousel-item
+
+          //- begin carousel-item-2
+          .carousel-item
+            .row.carousel-item-content
+              .col-lg-6.col-sm-12(style="background: url(img/content/hero/group-1.jpg) no-repeat center / cover")
+                .carousel-item-desc
+                  h3.title Ремонт Huawei
+                  a(href="#").btn.btn-light Подробнее
+                .pic-container
+                  img(src="img/content/hero/huawei.png", alt="Картинка huawei")
+              .col-lg-6.col-sm-12(style="background: url(img/content/hero/group-2.jpg) no-repeat center / cover") 
+                .carousel-item-desc
+                  h3.title Ремонт Honor
+                  a(href="#").btn.btn-light Подробнее
+                .pic-container  
+                  img(src="img/content/hero/honor.png", alt="Картинка honor")
+          //- end carousel-item
+
+          //- begin carousel-item-3
+          .carousel-item
+            .row.carousel-item-content
+              .col-lg-6.col-sm-12(style="background: url(img/content/hero/group-1.jpg) no-repeat center / cover")
+                .carousel-item-desc
+                  h3.title Ремонт Huawei
+                  a(href="#").btn.btn-light Подробнее
+                .pic-container
+                  img(src="img/content/hero/huawei.png", alt="Картинка huawei")
+              .col-lg-6.col-sm-12(style="background: url(img/content/hero/group-2.jpg) no-repeat center / cover") 
+                .carousel-item-desc
+                  h3.title Ремонт Honor
+                  a(href="#").btn.btn-light Подробнее
+                .pic-container  
+                  img(src="img/content/hero/honor.png", alt="Картинка honor")
+          //- end carousel-item
+
+          //- begin carousel-item-4              
+          .carousel-item
+            .row.carousel-item-content
+              .col-lg-6.col-sm-12(style="background: url(img/content/hero/group-1.jpg) no-repeat center / cover")
+                .carousel-item-desc
+                  h3.title Ремонт Huawei
+                  a(href="#").btn.btn-light Подробнее
+                .pic-container
+                  img(src="img/content/hero/huawei.png", alt="Картинка huawei")
+              .col-lg-6.col-sm-12(style="background: url(img/content/hero/group-2.jpg) no-repeat center / cover") 
+                .carousel-item-desc
+                  h3.title Ремонт Honor
+                  a(href="#").btn.btn-light Подробнее
+                .pic-container  
+                  img(src="img/content/hero/honor.png", alt="Картинка honor")
+          //- end carousel-item
+
+        a(href="#carouselPreview" role="button" data-slide="prev").carousel-control.carousel-control-prev
+          object(type="image/svg+xml" data="img/general/prev.svg" aria-hidden="true")
+          span.sr-only Previous
+
+        a(href="#carouselPreview" role="button" data-slide="next").carousel-control.carousel-control-next
+          object(type="image/svg+xml" data="img/general/next.svg" aria-hidden="true")
+          span.sr-only Next 
+  //- end hero
+
+  //- begin repairs
+  section.repairs
+    .container
+      h2.title-section Мы ремонтируем
+
+      .devices
+        .row
+          .col-lg-6
+            .device
+              .content-device.bg-dark
+                .description-device
+                  h3.name-device Смартфоны<br>
+                    span.text-primary Huawei
+                  a(href="#") Подробнее
+                .pic-container
+                  img(src="img/content/repairs/huawei.png", alt="Картинка Huawei")
+          //- end huawei
+          .col-lg-6
+            .device
+              .content-device.bg-dark
+                .description-device
+                  h3.name-device Смартфоны<br>
+                    span.text-primary Honor
+                  a(href="#") Подробнее
+                .pic-container
+                  img(src="img/content/repairs/honor.png", alt="Картинка Honor")
+          //- end honor
+        .row
+          .col-lg-4
+            .device
+              .content-device.bg-light
+                .pic-container
+                  img(src="img/content/repairs/tablet.png", alt="Картинка планшетов")
+                .description-device
+                  h3.name-device Планшеты
+                  a(href="#") Подробнее
+          //- end tablet
+          .col-lg-4
+            .device
+              .content-device.bg-light
+                .pic-container
+                  img(src="img/content/repairs/mac.png", alt="Картинка ноутбуков")
+                .description-device
+                  h3.name-device Ноутбуки
+                  a(href="#") Подробнее
+          //- end mac
+          .col-lg-4
+            .device
+              .content-device.bg-light
+                .pic-container
+                  img(src="img/content/repairs/clock.png", alt="Картинка часов")
+                .description-device
+                  h3.name-device Часы
+                  a(href="#") Подробнее
+          //- end clock
+      .btn-area.btn-area-repairs
+        a(href="#").btn.btn-primary Обратиться к нам      
+  //- end repairs
+
+  //- begin work examples
+  section.works.bg-light
+    .container
+      h2.title-works.title-section Примеры работ
+
+      .carousel.slide#carouselWorks(data-ride="carousel")
+        
+        ol.carousel-indicators
+          li(data-target="#carouselWorksIndicators" data-slide-to="0").active Смартфоны
+          li(data-target="#carouselWorksIndicators" data-slide-to="1") Ноутбуки
+          li(data-target="#carouselWorksIndicators" data-slide-to="2") Планешты
+          li(data-target="#carouselWorksIndicators" data-slide-to="3") Часы
+        
+        .carousel-inner
+          //- begin carousel-item-1
+          .carousel-item.active
+            .row.carousel-item-content
+              a(href="#").title-example
+                img(src="img/content/works/mask-1.jpg" alt="Картинка с разобраным телефоном")
+              a(href="#").title-example 
+                img(src="img/content/works/mask-2.jpg" alt="Картинка с разобраным телефоном")
+          //- end carousel-item
+
+          //- begin carousel-item-2
+          .carousel-item
+            .row.carousel-item-content
+              a(href="#").title-example
+                img(src="img/content/works/mask-1.jpg" alt="Картинка с разобраным телефоном")
+              a(href="#").title-example 
+                img(src="img/content/works/mask-2.jpg" alt="Картинка с разобраным телефоном")
+          //- end carousel-item
+
+          //- begin carousel-item-3
+          .carousel-item
+            .row.carousel-item-content
+              a(href="#").title-example
+                img(src="img/content/works/mask-1.jpg" alt="Картинка с разобраным телефоном")
+              a(href="#").title-example 
+                img(src="img/content/works/mask-2.jpg" alt="Картинка с разобраным телефоном")
+          //- end carousel-item
+
+          //- begin carousel-item-4
+          .carousel-item
+            .row.carousel-item-content
+              a(href="#").title-example
+                img(src="img/content/works/mask-1.jpg" alt="Картинка с разобраным телефоном")
+              a(href="#").title-example 
+                img(src="img/content/works/mask-2.jpg" alt="Картинка с разобраным телефоном")
+          //- end carousel-item
+
+        a(href="#carouselWorks" role="button" data-slide="prev").btn.btn-secondary.carousel-control.carousel-control-prev
+          object(type="image/svg+xml" data="img/general/prev.svg" aria-hidden="true")
+          span.sr-only Previous
+
+        a(href="#carouselWorks" role="button" data-slide="next").btn.btn-secondary.carousel-control.carousel-control-next
+          object(type="image/svg+xml" data="img/general/next.svg" aria-hidden="true")
+          span.sr-only Next  
+  //- end work examples
+
+  //- begin price-1
+  section.price.price-1
+    .container
+      .row(style="background: url(img/content/price/bckgrnd.jpg) no-repeat center / cover")
+        .col-lg-7.price-content
+          h2.title-price.title-section Оставьте заявку
+          p и узнайте стоимость ремонта за 5 минут!
+
+          form.price-form
+            .form-group-container
+              .form-group
+                input(type="text" name="имя" aria-describedby="имя" placeholder="Ваше имя" id="name").form-control
+              .form-group
+                input(type="text" name="телефон" aria-describedby="телефонный номер" placeholder="+7(___)-___-__-__*" id="tel").form-control
+            
+            button(type="submit").btn.btn-primary Отравить
+
+            small.form-text.
+              Нажимая кнопку “Отправить”, я даю согласие на обработку персональных данных 
+
+        .col-lg-5.pic-container
+          img(src="img/content/price/laptops.png", alt="Телефоны")
+  //- end price-1
+
+  //- begin our-services
+  section.services 
+    .container
+      h2.title-section Обратившись к нам, Вы получите:
+      .row.content-services
+        each obj in services
+          +service(obj.title, obj.desc, obj.pic)
+  //- end our-services
+
+  //- begin about service
+  section.about
+    .container
+      .content.content-about
+        h2.title-section Сервисный центр Huawei
+        p.
+            Задача организации, в особенности же консультация с широким активом влечет за собой процесс внедрения 
+            и модернизации позиций, занимаемых участниками в отношении поставленных задач. 
+            Таким образом новая модель организационной деятельности способствует 
+            подготовки и реализации направлений прогрессивного развития. 
+            Разнообразный и богатый опыт постоянное информационно-пропагандистское 
+            обеспечение нашей деятельности обеспечивает широкому кругу (специалистов) 
+            участие в формировании дальнейших направлений развития. 
+            Равным образом сложившаяся структура организации позволяет 
+            выполнять важные задания по разработке системы обучения кадров, 
+            соответствует насущным потребностям. Идейные соображения высшего порядка, 
+            а также новая модель организационной деятельности представляет 
+            собой интересный эксперимент проверки позиций, 
+            занимаемых участниками в отношении поставленных задач.
+        
+        a(href="#").btn.btn-primary Подробнее
+  //- end about service
+
+  //- begin price-1
+  section.price.price-2
+    .container
+      .row(style="background: url(img/content/price/bckgrnd-2.jpg) no-repeat center / cover")
+        .col-lg-7.price-content
+          h2.title-price.title-section Оставьте заявку
+          p и узнайте стоимость ремонта за 5 минут!
+
+          form.price-form
+            .form-group-container
+              .form-group
+                input(type="text" name="имя" aria-describedby="имя" placeholder="Ваше имя" id="name").form-control
+              .form-group
+                input(type="text" name="телефон" aria-describedby="телефонный номер" placeholder="+7(___)-___-__-__*" id="tel").form-control
+            
+            button(type="submit").btn.btn-light Отравить
+
+            small.form-text.
+              Нажимая кнопку “Отправить”, я даю согласие на обработку персональных данных 
+
+        .col-lg-5.pic-container
+          img(src="img/content/price/phone.png", alt="Телефоны")
+  //- end price-1
+
+  //- begin reviews
+  section.reviews
+    .container
+      h2.title-reviews.title-section Отзывы
+
+      .carousel.slide#carouselReviews(data-ride="carousel")
+        
+        ol.carousel-indicators
+          li(data-target="#carouselReviewsIndicators" data-slide-to="0").active
+          li(data-target="#carouselReviewsIndicators" data-slide-to="1")
+          li(data-target="#carouselReviewsIndicators" data-slide-to="2")
+          li(data-target="#carouselReviewsIndicators" data-slide-to="3")
+        
+        .carousel-inner
+          //- begin carousel-item-1
+          .carousel-item.active
+            .row.carousel-item-content.bg-dark
+              //- begin user
+              .user-review.bg-light
+                .ava-user-container
+                  img(src="img/content/reviews/user.png", alt="Аватар пользователя")
+
+                .user-description
+                  h3.inf-user Елена, 34 года Нижний новгород
+              //- end user
+
+              //- begin user review
+              .user-review-content
+                blockquote.user-review-text.
+                  Не следует, однако забывать, что укрепление и развитие структуры в значительной 
+                  степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. 
+                  Товарищи! консультация с широким активом влечет за собой процесс внедрения и модернизации форм развития. 
+                  Повседневная практика показывает, что консультация с широким активом требуют определения...
+
+                .btn-area
+                  a(href="#").btn.btn-primary Читать полностью
+                  a(href="#").btn.btn-light Оригинал отзыва
+              //- end user review
+          //- end carousel-item-1
+
+          //- begin carousel-item-2
+          .carousel-item
+            .row.carousel-item-content.bg-dark
+              //- begin user
+              .user-review.bg-light
+                .ava-user-container
+                  img(src="img/content/reviews/user.png", alt="Аватар пользователя")
+
+                .user-description
+                  h3.inf-user Елена, 34 года Нижний новгород
+              //- end user
+
+              //- begin user review
+              .user-review-content
+                blockquote.user-review-text.
+                  Не следует, однако забывать, что укрепление и развитие структуры в значительной 
+                  степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. 
+                  Товарищи! консультация с широким активом влечет за собой процесс внедрения и модернизации форм развития. 
+                  Повседневная практика показывает, что консультация с широким активом требуют определения...
+
+                .btn-area
+                  a(href="#").btn.btn-primary Читать полностью
+                  a(href="#").btn.btn-light Оригинал отзыва
+              //- end user review
+          //- end carousel-item-2
+
+          //- begin carousel-item-3
+          .carousel-item
+            .row.carousel-item-content.bg-dark
+              //- begin user
+              .user-review.bg-light
+                .ava-user-container
+                  img(src="img/content/reviews/user.png", alt="Аватар пользователя")
+
+                .user-description
+                  h3.inf-user Елена, 34 года Нижний новгород
+              //- end user
+
+              //- begin user review
+              .user-review-content
+                blockquote.user-review-text.
+                  Не следует, однако забывать, что укрепление и развитие структуры в значительной 
+                  степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. 
+                  Товарищи! консультация с широким активом влечет за собой процесс внедрения и модернизации форм развития. 
+                  Повседневная практика показывает, что консультация с широким активом требуют определения...
+
+                .btn-area
+                  a(href="#").btn.btn-primary Читать полностью
+                  a(href="#").btn.btn-light Оригинал отзыва
+              //- end user review
+          //- end carousel-item-3
+
+          //- begin carousel-item-4
+          .carousel-item
+            .row.carousel-item-content.bg-dark
+              //- begin user
+              .user-review.bg-light
+                .ava-user-container
+                  img(src="img/content/reviews/user.png", alt="Аватар пользователя")
+
+                .user-description
+                  h3.inf-user Елена, 34 года Нижний новгород
+              //- end user
+
+              //- begin user review
+              .user-review-content
+                blockquote.user-review-text.
+                  Не следует, однако забывать, что укрепление и развитие структуры в значительной 
+                  степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. 
+                  Товарищи! консультация с широким активом влечет за собой процесс внедрения и модернизации форм развития. 
+                  Повседневная практика показывает, что консультация с широким активом требуют определения...
+
+                .btn-area
+                  a(href="#").btn.btn-primary Читать полностью
+                  a(href="#").btn.btn-light Оригинал отзыва
+              //- end user review
+          //- end carousel-item-4
+                
+        a(href="#carouselReviews" role="button" data-slide="prev").btn.btn-secondary.carousel-control.carousel-control-prev
+          object(type="image/svg+xml" data="img/general/prev.svg" aria-hidden="true")
+          span.sr-only Previous
+
+        a(href="#carouselReviews" role="button" data-slide="next").btn.btn-secondary.carousel-control.carousel-control-next
+          object(type="image/svg+xml" data="img/general/next.svg" aria-hidden="true")
+          span.sr-only Next
+  //- end reviews
+
+  //- begin masters
+  section.masters.bg-light
+    .container
+      h2.title-master.title-section Наши мастера
+
+      .carousel.slide#carouselMasters(data-ride="carousel")
+        
+        ol.carousel-indicators
+          li(data-target="#carouselMastersIndicators" data-slide-to="0").active
+          li(data-target="#carouselMastersIndicators" data-slide-to="1")
+          li(data-target="#carouselMastersIndicators" data-slide-to="2")
+          li(data-target="#carouselMastersIndicators" data-slide-to="3")
+        
+        .carousel-inner
+          //- begin carousel-item-1
+          .carousel-item.active
+            .row.carousel-item-content
+              //- begin master-1
+              .master-masters
+                .content-master
+                  .ava-master
+                    img(src="img/content/masters/master.jpg", alt="Автопортрет нашего мастера")
+                  .description-master
+                    h3.name-master Константин Константинов
+                    p.master-experience Стаж 5 лет
+                  
+                .btn-area.link-master
+                  a(href="#").btn.btn-primary Обратиться
+              //- end master
+                
+              //- begin master-2
+              .master-masters
+                .content-master
+                  .ava-master
+                    img(src="img/content/masters/master.jpg", alt="Автопортрет нашего мастера")
+                  .description-master
+                    h3.name-master Константин Константинов
+                    p.master-experience Стаж 5 лет
+                  
+                .btn-area.link-master
+                  a(href="#").btn.btn-primary Обратиться
+              //- end master
+
+              //- begin master-3
+              .master-masters
+                .content-master
+                  .ava-master
+                    img(src="img/content/masters/master.jpg", alt="Автопортрет нашего мастера")
+                  .description-master
+                    h3.name-master Константин Константинов
+                    p.master-experience Стаж 5 лет
+                  
+                .btn-area.link-master
+                  a(href="#").btn.btn-primary Обратиться
+              //- end master
+          //- end carousel-item
+
+          //- begin carousel-item-2
+          .carousel-item
+            .row.carousel-item-content
+              //- begin master-1
+              .master-masters
+                .content-master
+                  .ava-master
+                    img(src="img/content/masters/master.jpg", alt="Автопортрет нашего мастера")
+                  .description-master
+                    h3.name-master Константин Константинов
+                    p.master-experience Стаж 5 лет
+                  
+                .btn-area.link-master
+                  a(href="#").btn.btn-primary Обратиться
+              //- end master
+                
+              //- begin master-2
+              .master-masters
+                .content-master
+                  .ava-master
+                    img(src="img/content/masters/master.jpg", alt="Автопортрет нашего мастера")
+                  .description-master
+                    h3.name-master Константин Константинов
+                    p.master-experience Стаж 5 лет
+                  
+                .btn-area.link-master
+                  a(href="#").btn.btn-primary Обратиться
+              //- end master
+
+              //- begin master-3
+              .master-masters
+                .content-master
+                  .ava-master
+                    img(src="img/content/masters/master.jpg", alt="Автопортрет нашего мастера")
+                  .description-master
+                    h3.name-master Константин Константинов
+                    p.master-experience Стаж 5 лет
+                  
+                .btn-area.link-master
+                  a(href="#").btn.btn-primary Обратиться
+              //- end master
+          //- end carousel-item
+
+          //- begin carousel-item-3
+          .carousel-item
+            .row.carousel-item-content
+              //- begin master-1
+              .master-masters
+                .content-master
+                  .ava-master
+                    img(src="img/content/masters/master.jpg", alt="Автопортрет нашего мастера")
+                  .description-master
+                    h3.name-master Константин Константинов
+                    p.master-experience Стаж 5 лет
+                  
+                .btn-area.link-master
+                  a(href="#").btn.btn-primary Обратиться
+              //- end master
+                
+              //- begin master-2
+              .master-masters
+                .content-master
+                  .ava-master
+                    img(src="img/content/masters/master.jpg", alt="Автопортрет нашего мастера")
+                  .description-master
+                    h3.name-master Константин Константинов
+                    p.master-experience Стаж 5 лет
+                  
+                .btn-area.link-master
+                  a(href="#").btn.btn-primary Обратиться
+              //- end master
+
+              //- begin master-3
+              .master-masters
+                .content-master
+                  .ava-master
+                    img(src="img/content/masters/master.jpg", alt="Автопортрет нашего мастера")
+                  .description-master
+                    h3.name-master Константин Константинов
+                    p.master-experience Стаж 5 лет
+                  
+                .btn-area.link-master
+                  a(href="#").btn.btn-primary Обратиться
+              //- end master
+          //- end carousel-item
+
+          //- begin carousel-item-4
+          .carousel-item
+            .row.carousel-item-content
+              //- begin master-1
+              .master-masters
+                .content-master
+                  .ava-master
+                    img(src="img/content/masters/master.jpg", alt="Автопортрет нашего мастера")
+                  .description-master
+                    h3.name-master Константин Константинов
+                    p.master-experience Стаж 5 лет
+                  
+                .btn-area.link-master
+                  a(href="#").btn.btn-primary Обратиться
+              //- end master
+                
+              //- begin master-2
+              .master-masters
+                .content-master
+                  .ava-master
+                    img(src="img/content/masters/master.jpg", alt="Автопортрет нашего мастера")
+                  .description-master
+                    h3.name-master Константин Константинов
+                    p.master-experience Стаж 5 лет
+                  
+                .btn-area.link-master
+                  a(href="#").btn.btn-primary Обратиться
+              //- end master
+
+              //- begin master-3
+              .master-masters
+                .content-master
+                  .ava-master
+                    img(src="img/content/masters/master.jpg", alt="Автопортрет нашего мастера")
+                  .description-master
+                    h3.name-master Константин Константинов
+                    p.master-experience Стаж 5 лет
+                  
+                .btn-area.link-master
+                  a(href="#").btn.btn-primary Обратиться
+              //- end master
+          //- end carousel-item
+
+        a(href="#carouselMasters" role="button" data-slide="prev").btn.btn-secondary.carousel-control.carousel-control-prev
+          object(type="image/svg+xml" data="img/general/prev.svg" aria-hidden="true")
+          span.sr-only Previous
+
+        a(href="#carouselMasters" role="button" data-slide="next").btn.btn-secondary.carousel-control.carousel-control-next
+          object(type="image/svg+xml" data="img/general/next.svg" aria-hidden="true")
+          span.sr-only Next
+  //- end masters
+
+  //- begin steps
+  section.steps
+    .container 
+      h2.title-step.title-section Этапы работы
+
+      .row.steps-container
+        .col.step-steps.step-1.bg-primary
+          span.counter-step 1
+
+          .step-description
+            h3.name-step Заявка на ремонт
+            p.
+              Дежурный оператор принимает вашу 
+              заявку по телефону, указанному на сайте.
+          a(href="#").btn.btn-light Оставить заявку
+          .next-step.bg-primary(style="position:absolute; top: 0; right: -48px;")
+            img(src="img/general/next.svg", alt="Следующий шаг")
+        .col.step-steps.step-2.bg-light
+          span.counter-step 2
+
+          .step-description
+            h3.name-step Диагностика
+            p.
+              Клиент самостоятельно или с помощью
+              курьера доставляет неисправный гаджет к 
+              нам, после чего проводиться полная проверка
+              устройства и называеться точная цена услуги.
+          .next-step.bg-light(style="position: absolute; right: 0; bottom: -48px;") 
+            img(src="img/general/down.svg", alt="Следующий шаг")
+      .row.steps-container
+        .col.step-steps.step-4.bg-light
+          span.counter-step 4
+
+          .step-description
+            h3.name-step Итог
+            p.
+              После окончания ремонта оператор 
+              связываться с вами, чтобы договориться о времени 
+              передачи исправной техники владельцу.
+        .col.step-steps.step-3.bg-primary
+          span.counter-step 3
+
+          .step-description
+            h3.name-step Ремонт
+            p.
+              После окончания ремонта оператор связывается с вами,
+              чтобы договориться о времени передачи исправной тезники владельцу.
+          .next-step.bg-primary(style="position: absolute; top: 0; left: -48px;")
+            img(src="img/general/prev.svg", alt="Следующий шаг")          
+  //- end steps
+      
+  //- begin price-3
+  section.price.price-3
+    .container
+      .row(style="background: url(img/content/price/bckgrnd.jpg) no-repeat center / cover")
+        .col-lg-7.price-content
+          h2.title-price.title-section Оставьте заявку
+          p и узнайте стоимость ремонта за 5 минут!
+
+          form.price-form
+            .form-group-container
+              .form-group
+                input(type="text" name="имя" aria-describedby="имя" placeholder="Ваше имя" id="name").form-control
+              .form-group
+                input(type="text" name="телефон" aria-describedby="телефонный номер" placeholder="+7(___)-___-__-__*" id="tel").form-control
+            
+            button(type="submit").btn.btn-primary Отравить
+
+            small.form-text.
+              Нажимая кнопку “Отправить”, я даю согласие на обработку персональных данных 
+
+        .col-lg-5.pic-container
+          img(src="img/content/price/tablet.png", alt="Телефоны")
+  //- end price-3
+
+  include components/_footer

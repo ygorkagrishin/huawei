@@ -1,0 +1,39 @@
+//- begin nav
+.nav-area.bg-light
+  .container
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light
+      button.navbar-toggler(type="button" data-toggle="collapse" 
+      data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+      aria-expanded="false" aria-label="Toggle navigation")
+        span.navbar-toggler-icon
+
+      .collapse.navbar-collapse#navbarSupportedContent
+        ul.navbar-nav.mr-auto
+          li.nav-item.active
+            a(href="#").nav-link Главная
+              span.sr-only (current)
+          li.nav-item.dropdown
+            a(href="#" role="button" data-toggle="dropdown" 
+            aria-haspopup="true" aria-expanded="false").nav-link.dropdown-toggle#navbarDropdown Ремонтируем
+            .dropdown-menu(aria-labelledby="navbarDropdown")
+              a(href="#").dropdown-item Смартфоны
+              a(href="#").dropdown-item Планшеты
+              a(href="#").dropdown-item Ноутбуки
+              a(href="#").dropdown-item Часы
+            
+          li.nav-item
+            a(href="#").nav-link О компании
+          li.nav-item
+            a(href="#").nav-link Сотрудничество
+          li.nav-item
+            a(href="#").nav-link Гарантии
+          li.nav-item
+            a(href="#").nav-link Новости
+          li.nav-item
+            a(href="#").nav-link Контакты
+
+        form.row.form-inline.my-2.my-lg-0
+          //- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          button(type="submit").btn.my-2.my-sm-0
+            img(src="img/general/glass.svg", alt="Картинка поиска")
+//- end nav

@@ -1,0 +1,63 @@
+footer(role="contentinfo").bg-light
+  //- begin top 
+  .top
+    include _header
+  //- end top
+
+  //- begin main
+  .main-footer
+    .container
+      .row
+        .col.content-footer
+          h4.title Сервисный центр Huawei
+          p.
+            Только мастера с колоссальным опытом работы в этой сфере 
+            смогут гарантированно вернуть вашу технику к жизни даже в самой сложной ситуации. 
+            Если вы хотите избавиться от неисправностей надолго, обращайтесь только...
+
+          a(href="#").btn.btn-primary Подробнее
+        .col.map-container
+          img(src="img/content/footer/map.jpg", alt="Картинка карты")
+  //- end main
+
+  //- begin nav
+  .nav-area
+    .container
+      nav.navbar.navbar-expand-lg.navbar-light
+        button(type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation".page-top ).navbar-toggler
+          span.navbar-toggler-icon
+        .collapse.navbar-collapse#navbarNavDropdown
+          ul.navbar-nav
+            li.nav-item.active
+              a(href="#").nav-link Главная <span class="sr-only">(current)</span>
+
+            li.nav-item
+              a(href="#").nav-link Ремонтируем
+            
+            li.nav-item
+              a(href="#").nav-link О компании
+
+            li.nav-item
+              a(href="#").nav-link Сотрудничество
+
+            li.nav-item
+              a(href="#").nav-link Гарантии
+
+            li.nav-item
+              a(href="#").nav-link Новости
+            
+            li.nav-item
+              a(href="#").nav-link Контакты
+  //- end nav
+
+  //- begin copyright
+  .copyright.bg-dark
+    .container
+      .row
+        .col-lg-6
+          P © Huawei 2019 Все права защищены
+
+        .col-lg-6.license
+          a(href="#") Политика конфиденциальности
+  //- end copyright

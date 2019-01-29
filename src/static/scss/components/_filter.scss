@@ -1,0 +1,34 @@
+.filter-container .filter {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+.filter-container .dropdown-toggle {
+  padding: 1% 0;
+
+  color: $white;
+  background-color: transparent;
+  border: none;
+}
+
+.filter-container .dropdown-toggle::before {
+  content: '';
+
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  margin-right: 6px;
+
+  vertical-align: -1px;
+
+  background: url('img/general/global.svg') no-repeat center / cover;
+}
+
+.filter-container .dropdown-toggle:focus {
+  outline: none;
+}
+
+.filter-container .dropdown-menu {
+  width: 100%;
+  margin: 0;
+}

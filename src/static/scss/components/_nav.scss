@@ -1,0 +1,52 @@
+// В подвале сайте на этой веб странице, то же имееться навигационная панель
+
+.page-top .navbar {
+  padding: 22px 0;
+}
+
+.page-top .navbar .navbar-nav {
+  display: flex;
+  width: 100%;
+}
+
+.page-top .navbar .nav-item:not(:last-child) {
+  margin-right: 45px;
+}
+
+.page-top .navbar .nav-item .dropdown-menu {
+  top: calc(100% + 30px);
+
+  width: 100%;
+  margin: 0;
+}
+
+.page-top .navbar .nav-link {
+  padding: 0 !important;
+  
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.page-top .navbar .form-inline .btn {
+  background: transparent;
+}
+
+@media screen and (min-width: 280px) {
+  .page-top .navbar-nav {
+    padding: 5% 0;
+  }
+
+  .page-top .nav-item:not(:last-child) {
+    margin-bottom: 10%;
+  }
+}
+
+@media screen and (min-width: 540px) {
+  .page-top .navbar .navbar-nav {
+    padding: 0;
+  }
+
+  .page-top .navbar .nav-item:not(:last-child) {
+    margin: 0 45px 0 0;
+  }
+}
